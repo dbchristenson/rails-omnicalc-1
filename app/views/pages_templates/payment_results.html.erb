@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Results</title>
+</head>
+<body>
+  <h1> Payment Results </h1>
+
+  <dl>
+    <dt> APR </dt>
+    <dd> <%= @apr %> </dd>
+
+    <dt> Number of years </dt>
+    <dd> <%= @years %> </dd>
+
+    <dt> Principal </dt>
+    <dd> <%= @principal %> </dd>
+
+    <dt> Payment </dt>
+    <dd> <%= @payment %> </dd>
+  </dl>
+
+  <a href="/payment/new">
+    Calculate another payment
+  </a>
+</body>
+</html>
