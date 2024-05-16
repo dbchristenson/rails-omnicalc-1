@@ -7,6 +7,10 @@ end
 
 
 class PagesController < ApplicationController
+  def index
+    render(:template => "layouts/application")
+  end
+
   def square_new
     render(:template => "pages_templates/square_new")
   end
